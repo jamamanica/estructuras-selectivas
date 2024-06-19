@@ -3,36 +3,36 @@
 using namespace std;
 int main(){
     int a, b, c;
-    cout<<"Primer numero: ";
+    cout<<"Ingrese el primer numero: ";
     cin>>a;
-    cout<<"Segundo numero: ";
+    cout<<"Ingrese el segundo numero: ";
     cin>>b;
-    cout<<"Tercer numero: ";
+    cout<<"Ingrese el tercer numero: ";
     cin>>c;
     if (a<b){
     	if (a<c){
     		if (b<c){
-    			cout<<a<<", "<<b<<", "<<c<<endl;
+    			cout<<"El orden ascendente es: "<<a<<", "<<b<<", "<<c<<endl;
 			}
 			else{
-				cout<<a<<", "<<c<<", "<<b<<endl;
+				cout<<"El orden ascendente es: "<<a<<", "<<c<<", "<<b<<endl;
 			}
 		}
 		else{
-			cout<<c<<", "<<a<<", "<<b<<endl;
+			cout<<"El orden ascendente es: "<<c<<", "<<a<<", "<<b<<endl;
 		}
 	}
 	else{
 		if (b<c){
 			if (a<c){
-				cout<<b<<", "<<a<<", "<<c<<endl;
+				cout<<"El orden ascendente es: "<<b<<", "<<a<<", "<<c<<endl;
 			}
 			else{
-				cout<<b<<", "<<c<<", "<<a<<endl;
+				cout<<"El orden ascendente es: "<<b<<", "<<c<<", "<<a<<endl;
 			}
 		}
 		else{
-			cout<<c<<", "<<b<<", "<<a<<endl;
+			cout<<"El orden ascendente es: "<<c<<", "<<b<<", "<<a<<endl;
 		}
 	}
     return 0;
