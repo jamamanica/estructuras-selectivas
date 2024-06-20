@@ -9,31 +9,28 @@ int main(){
     cin>>b;
     cout<<"Ingrese el tercer numero: ";
     cin>>c;
-    if (a<b){
-    	if (a<c){
-    		if (b<c){
-    			cout<<"El orden ascendente es: "<<a<<", "<<b<<", "<<c<<endl;
-			}
-			else{
-				cout<<"El orden ascendente es: "<<a<<", "<<c<<", "<<b<<endl;
-			}
-		}
-		else{
-			cout<<"El orden ascendente es: "<<c<<", "<<a<<", "<<b<<endl;
+    int menor;
+	if (a<b&&a<c){
+		menor=a;
+	} else{
+		if(b<c){
+			menor=b;
+		} else{
+			menor=c;
 		}
 	}
-	else{
-		if (b<c){
-			if (a<c){
-				cout<<"El orden ascendente es: "<<b<<", "<<a<<", "<<c<<endl;
-			}
-			else{
-				cout<<"El orden ascendente es: "<<b<<", "<<c<<", "<<a<<endl;
-			}
-		}
-		else{
-			cout<<"El orden ascendente es: "<<c<<", "<<b<<", "<<a<<endl;
+	int mayor;
+	if(a>b&&a>c){
+		mayor=a;
+	} else{
+		if(b>c){
+			mayor=b;
+		} else{
+			mayor=c;
 		}
 	}
+	int medio;
+	medio=(a+b+c)-(mayor-menor);
+	cout<<"El orden ascendetne es: "<<menor<<", "<<medio<<", "<<mayor<<endl;
     return 0;
 }
