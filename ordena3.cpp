@@ -3,6 +3,7 @@
 using namespace std;
 int main(){
     int a, b, c;
+	cout<<"<<NUMEROS ORDENADOS>>"<<endl;
     cout<<"Ingrese el primer numero: ";
     cin>>a;
     cout<<"Ingrese el segundo numero: ";
@@ -31,6 +32,6 @@ int main(){
 	}
 	int medio;
 	medio=(a+b+c)-(mayor-menor);
-	cout<<"El orden ascendetne es: "<<menor<<", "<<medio<<", "<<mayor<<endl;
+	cout<<"El orden ascendente es: "<<menor<<" < "<<medio<<" < "<<mayor<<endl;
     return 0;
 }
